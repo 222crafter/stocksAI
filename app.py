@@ -64,3 +64,5 @@ st.write("Forecast components")
 fig2 = m.plot_components(forecast)
 st.write(fig2)
     
+import os
+os.system("python3 -m streamlit run https://github.com/222crafter/stocksAI/blob/main/app.py")
