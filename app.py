@@ -1,4 +1,17 @@
 # pip install streamlit fbprophet yfinance plotly
+
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install("streamlit")
+install("pystan")
+install("yfinance")
+install("fbprophet")
+install("plotly")
+
 import streamlit as st
 from datetime import date
 
